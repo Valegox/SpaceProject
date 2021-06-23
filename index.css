@@ -1,0 +1,177 @@
+@font-face{
+	font-family: "Fox Speed";
+	src : url('./Fonts/GearsOfPeace.ttf') format('truetype');
+}
+
+
+body{
+	background : black;
+	width : 100vw; 
+	height : 100vh;
+	display : flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-image: url('./images/ciel.jpeg');
+	color : white;
+}
+header{
+	margin-right: 50px;
+	margin-left : 50px;
+	height : 75px;
+	display: flex;
+	justify-content: center;
+	font-size : 300%; 
+	font-family: "Fox Speed";
+}
+#center{
+	position : relative;
+	height : 50vh;
+	display : flex; 
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content : center;
+}
+
+
+
+#play{
+	display : flex;
+	justify-items: center;
+	align-content: center;
+	flex-direction: column;
+	position : relative; 
+	width : 500px;
+	height : 25vh;
+	margin-right : auto;
+	margin-left: auto; 
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#button{
+	display : flex; 
+	width : 400px; 
+	height : 75px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 3em;
+	border-radius: 15px;
+
+}
+#pseudo{
+	display : flex; 
+	width : 300px; 
+	height : 35px;
+	border-radius: 10px;
+	font-size: 200%;
+}
+#text_input{
+	font-weight: bold;
+	font-size: 200%;
+}
+
+
+#main{
+	display : flex;
+	justify-content: center;
+	height : 39vh;
+	width: 100vw;
+	align-items: flex-end;
+	position: absolute;
+	bottom : 0px;
+}
+
+
+#fame{
+	display : flex; 
+	flex-direction: row;
+	justify-content : space-around; 
+	width: 75%;
+	align-items: flex-end;
+	position : relative;
+
+}
+
+#aliens{
+	display : flex;
+	flex-direction: column;
+	height : 200px; 
+}
+#spaceships{
+	display : flex;
+	flex-direction: column;
+	height : 200px;
+}
+#aliens,#spaceships{
+	padding : 10px
+}
+
+/* css de la page choose */
+
+#continue, #quit{
+	height : 55px; 
+	width: 120px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#button_continue{
+	position : absolute;
+	bottom : 0px; 
+	right : 3px;
+}
+#button_quit{
+	position : absolute; 
+	bottom : 0px; 
+	left : 15px
+}
+#main_2{
+	display : flex; 
+	justify-content: space-around;
+	align-items: center;
+	margin-top : 30vh;
+	height : 250px;
+}
+#aliens_2{
+	width : 400px; 
+	height: 350px;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Fox Speed";
+	margin-top : 3vh;
+}
+#spaceships_2{
+	width : 400px; 
+	height: 350px;
+	font-size : 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Fox Speed";
+	margin-top : 3vh;
+
+}
+#clavier_gauche , #clavier_droit{
+	width: 400px ;
+	height: 275px;
+
+}
+
+#clavier_droit{
+	border : 10px solid #43ff26;
+	border-radius : 6px
+}
+
+#clavier_gauche{
+	border : 10px solid #38e4ff;
+	border-radius : 6px
+
+}
