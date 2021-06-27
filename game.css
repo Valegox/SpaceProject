@@ -46,4 +46,15 @@ body
 #spaceship
 {
 	background-color: grey;
+	display: flex;
+	justify-content: center;
+}
+
+.missile
+{
+	background-color: red;
+	width: 5px;
+	height: 50px;
+	position: absolute;
+	bottom: 50px;
 }
