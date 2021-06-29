@@ -80,6 +80,18 @@ function shoot()
 		if ((missileX > alienX && missileX < alienX + PLAYER_SIZE) && (missileY > alienY && missileY < alienY + PLAYER_SIZE))
 		{
 			console.log("COLLISION")
+			alien.style.display = 'none'
+			alienPosition = {
+				x: SCREEN_WIDTH/2-PLAYER_SIZE/2,
+				y: 0
+			}
+			scoreSpaceship = scoreSpaceship + 1 
+			console.log(scoreSpaceship)
+			document.getElementById('score').textContent = 'Vaisseau : ' + scoreSpaceship
+
+			setTimeout(function() {
+				alien.style.display ='block'
+			}, 1500);
 		}
 
 		if (missileHeight > SCREEN_HEIGHT)

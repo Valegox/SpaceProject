@@ -58,3 +58,20 @@ body
 	position: absolute;
 	bottom: 50px;
 }
+header{
+	background-color: #111111;
+	display: flex ;
+	flex-direction: row-reverse;
+	color : white;
+}
+header h3{
+	margin-right: 30px;
+}
+#score{
+	background : #111111;
+	color : white;
+	margin-right : 30px;
+	margin-top: 20px;
+	width: 200px;
+}
+

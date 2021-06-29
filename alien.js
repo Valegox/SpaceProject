@@ -1,4 +1,4 @@
-const alien = document.getElementById('alien')
+
 const alienSpeed = 5
 
 let alienMove = {
@@ -6,10 +6,6 @@ let alienMove = {
 	y: 0
 }
 
-let alienPosition = {
-	x: SCREEN_WIDTH/2-PLAYER_SIZE/2,
-	y: 0
-}
 
 //alien.style.left = alienPosition.x + 'px'
 //alien.style.bottom = alienPosition.y + 'px'
