@@ -16,8 +16,8 @@ body
 #alien,
 #spaceship
 {
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 	position: absolute;
 }
 
@@ -29,9 +29,10 @@ body
 	width: 100vw;
 }
 
-#alien
-{
-	background-color: green;
+
+#image_alien{
+	height: 100%;
+	width: 100%;
 }
 
 #spaceshipsArea
@@ -45,7 +46,6 @@ body
 
 #spaceship
 {
-	background-color: grey;
 	display: flex;
 	justify-content: center;
 }
