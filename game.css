@@ -64,15 +64,13 @@ header{
 	flex-direction: row-reverse;
 	color : white;
 }
-header h3{
-	margin-right: 30px;
-	margin-top: 20px;
-}
-#score{
+
+#spaceshipScore,
+#alienScore
+{
 	background : #111111;
 	color : white;
-	margin-right : 30px;
+	margin-right : 20px;
 	margin-top: 20px;
-	width: 200px;
 }
 

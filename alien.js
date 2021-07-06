@@ -1,4 +1,3 @@
-
 const alienSpeed = 5
 
 let alienMove = {
@@ -6,11 +5,9 @@ let alienMove = {
 	y: 0
 }
 
+alien.style.left = alienPosition.x + 'px'
+alien.style.bottom = alienPosition.y + 'px'
 
-//alien.style.left = alienPosition.x + 'px'
-//alien.style.bottom = alienPosition.y + 'px'
-
-// alienMove alien
 document.addEventListener('keydown', event => {
 	switch (event.keyCode)
 	{
@@ -60,4 +57,8 @@ const alienMoveInterval = setInterval( () => {
 
 	alien.style.left = alienPosition.x + 'px'
 	alien.style.bottom = alienPosition.y + 'px'
+
+	timer += 0.01
+
+	document.getElementById('alienScore').textContent = 'Alien: ' + parseInt(timer) + ' secondes'
 }, 10)

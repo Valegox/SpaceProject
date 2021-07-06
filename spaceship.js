@@ -5,7 +5,7 @@ const spaceship = document.getElementById('spaceship')
 const spaceshipSpeed = 10
 
 let spaceshipMove = 0
-let spaceshipPosition = SCREEN_WIDTH/2-PLAYER_SIZE/2
+let spaceshipPosition = SCREEN_WIDTH/2
 
 spaceship.style.left = spaceshipMove + 'px'
 
@@ -79,18 +79,17 @@ function shoot()
 
 		if ((missileX > alienX && missileX < alienX + PLAYER_SIZE) && (missileY > alienY && missileY < alienY + PLAYER_SIZE))
 		{
-			console.log("COLLISION")
 			alien.style.display = 'none'
 			alienPosition = {
-				x: SCREEN_WIDTH/2-PLAYER_SIZE/2,
-				y: 0
+				x: SCREEN_WIDTH/2,
+				y: SCREEN_HEIGHT/4
 			}
 			scoreSpaceship = scoreSpaceship + 1 
-			console.log(scoreSpaceship)
-			document.getElementById('score').textContent = 'Vaisseau : ' + scoreSpaceship
+			document.getElementById('spaceshipScore').textContent = 'Vaisseau : ' + scoreSpaceship + ' kills'
 
 			setTimeout(function() {
-				alien.style.display ='block'
+				alien.style.display = 'block'
+				alienTimer = 0
 			}, 1500);
 		}
 
